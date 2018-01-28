@@ -18,9 +18,10 @@ public class SecondHomeTest extends BaseTest {
 
         //2. Нажать на – Застраховать себя и имущество
         //3. Выбрать – Страхование путешественников
-        MainPage mainPage=new MainPage(driver);
-        mainPage.selectMainMenu("Застраховать себя");
-        mainPage.selectSubMenu("/ru/person/bank_inshure/insuranceprogram/life/travel");
+        MainPage mainPage = new MainPage(driver);
+        mainPage.selectMainMenu("Застраховать");
+        MainPage subMenu = new MainPage(driver);
+        subMenu.selectSubMenu(driver);
 
         //4. Проверить наличие на странице заголовка – Страхование путешественников
         StrahPage strahPage = new StrahPage(driver);
